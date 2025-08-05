@@ -1,38 +1,312 @@
-.App {
+/* primarycolor: #3066be  */
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  position: relative;
+}
+
+* {
+  margin: 0rem;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  color: #333;
+  box-sizing: border-box;
+}
+/* ///////////////////// */
+/* ///// Main Nav ////// */
+/* ///////////////////// */
+
+.main-nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 5rem;
+  height: 9.8rem;
+  box-shadow: 1rem 0rem 3rem rgba(0, 0, 0, 0.15);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+  background-color: rgba(247, 250, 253, 0.9);
+  width: 100vw;
+}
+
+.main-nav-container {
+  background-color: rgba(247, 250, 253, 0.8); /* optional blur effect */
+  backdrop-filter: blur(8px); /* makes it elegant */
+}
+
+li {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.nav-img {
+  width: 5rem;
+  border-radius: 50%;
+}
+
+.main-nav-list-box {
+  display: flex;
+
+  filter: blur(100);
+}
+
+.main-nav-list-text {
+  font-size: 1.6rem;
+  /* color: #3066be; */
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 2.2rem 3rem;
+}
+
+.main-nav-list-text-a {
+  transition: all 0.3s;
+  cursor: pointer;
+  letter-spacing: 1px;
+}
+.main-nav-list-text-a:link,
+.main-nav-list-text-a:visited {
+  color: #333;
+}
+.main-nav-list-text-a:hover,
+.main-nav-list-text-a:active {
+  color: #3066be;
+}
+.main-nav-img-name-box {
+  display: flex;
+  align-items: center;
+}
+
+/* ///////////////////// */
+/* /// Hero section //// */
+/* ///////////////////// */
+
+.hero-container {
+  height: 100vh;
+  background-image: linear-gradient(
+      rgba(238, 238, 238, 0.95),
+      rgba(241, 241, 241, 0.95)
+    ),
+    url("./Content/hero-bg5.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex; /* flex container */
+  justify-content: center; /* center horizontally */
+  align-items: center;
+}
+
+.hero-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80rem;
+  flex-direction: column;
+}
+
+.hero-header {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 6rem;
+  text-transform: uppercase;
+  margin-bottom: 4.8rem;
+  letter-spacing: 1px;
+}
+
+.hero-into {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 2.2rem;
   text-align: center;
+  margin-bottom: 4.8rem;
+  letter-spacing: 0.75px;
+  line-height: 1.5;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.blue-button {
+  width: 26rem;
+  height: 6rem;
+  padding: 1.5rem 8rem;
+  font-size: 2rem;
+  text-transform: uppercase;
+  background-color: #3066be;
+  border: none;
+  color: aliceblue;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  border-radius: 6px;
+  transition: all 0.3s;
+  box-shadow: 1rem 1rem 3rem 1rem rgba(0, 0, 0, 0.1);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.blue-button:hover,
+.blue-button:active {
+  transform: translateY(-0.3rem);
+  box-shadow: 1rem 1rem 3rem 1rem rgba(0, 0, 0, 0.07);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* ///////////////////// */
+/* /// abt me section //// */
+/* ///////////////////// */
+
+.abtme-container {
+  width: 130rem;
+  margin: 0 auto;
+  margin-bottom: 9.6rem;
+}
+
+.abtme-box {
+  text-align: center;
+  margin: 9.6rem auto;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+}
+.abtme-header {
+  font-family: "Poppins", sans-serif;
+  font-size: 4rem;
+  letter-spacing: 3.5px;
+  text-transform: uppercase;
+  margin-bottom: 0.8rem;
+}
+.abtme-empty {
+  width: 6rem;
+  height: 0.5rem;
+  border-radius: 6rem;
+  background-color: #3066be;
+  align-items: center;
+  justify-self: center;
+  margin-bottom: 2.4rem;
+}
+.abtme-info {
+  width: 80rem;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 2.2rem;
+  letter-spacing: 1px;
+  color: #555;
+  line-height: 1.5;
+  font-weight: 500;
 }
 
-.App-link {
-  color: #61dafb;
+.abtme-2nd-section {
+  display: grid;
+  gap: 4.6rem;
+  grid-template-columns: 1fr 1fr;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.gtkm-box {
+}
+
+.gtkm-header {
+  font-size: 2.8rem;
+  margin-bottom: 3rem;
+}
+
+.gtkm-info {
+  font-size: 1.8rem;
+  line-height: 1.7;
+  color: #555;
+  margin-bottom: 4.6rem;
+}
+
+.gtkm-info-bold {
+  font-weight: 700;
+  color: #444;
+}
+
+.skill-text-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem 2.6rem;
+  padding: 2rem;
+  font-family: "YourPreferredFont", sans-serif;
+  align-items: center;
+}
+
+.skill-text-box {
+  font-size: 2rem;
+  background-color: #eee;
+  padding: 1rem 3rem;
+  display: block;
+  border-radius: 6px;
+  font-weight: 500;
+  transition: all 0.5s;
+}
+
+.html:hover {
+  background-color: #e34c26;
+}
+
+.css:hover {
+  background-color: #663399;
+}
+
+.js:hover {
+  background-color: #f0db4f;
+}
+
+.react:hover {
+  background-color: #1c2c4c;
+}
+
+.py:hover {
+  background-color: #ffd43b;
+}
+
+.java:hover {
+  background-color: #f89820;
+}
+
+.cpp:hover {
+  background-color: #5599ff;
+}
+
+.git:hover {
+  background-color: #000;
+}
+
+.html:hover p {
+  color: #fff;
+}
+
+.css:hover p {
+  color: #fff;
+}
+
+.js:hover p {
+  color: #323330;
+}
+
+.react:hover p {
+  color: #61dbfb;
+}
+
+.py:hover p {
+  color: #306998;
+}
+
+.git:hover p {
+  color: #fff;
+}
+
+.mongo:hover {
+  background-color: #4db33c;
+}
+.mongo:hover p {
+  color: #fff;
+}
+
+.sql:hover {
+  background-color: #00758f;
+}
+.sql:hover p {
+  color: #fff;
 }
