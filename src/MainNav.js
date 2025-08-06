@@ -17,7 +17,7 @@ function NavImgName() {
         alt="sanjay image"
         class="nav-img main-nav-list-text-a"
       />
-      <a className="main-nav-list-text main-nav-list-text-a ">
+      <a href="#" className="main-nav-list-text main-nav-list-text-a ">
         Sanjayakumar jeyakumar
       </a>
     </div>
@@ -38,7 +38,9 @@ function NavTextList() {
 function NavText({ children, link }) {
   return (
     <li className="main-nav-list-text">
-      <a className="main-nav-list-text-a">{children}</a>
+      <a href="#" className="main-nav-list-text-a">
+        {children}
+      </a>
     </li>
   );
 }

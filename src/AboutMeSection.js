@@ -33,10 +33,10 @@ function GetToKnowMe() {
         <span class="gtkm-info-bold"> responsive</span>, interactive, and
         user-centric websites using HTML, CSS, JavaScript, and modern
         development tools. Experienced in building{" "}
-        <span class="gtkm-info-bold">real-time functionality</span>
+        <span class="gtkm-info-bold">real-time functionality </span>
         and managing data persistence with clean, scalable code. Passionate
         about UI/UX design,{" "}
-        <span class="gtkm-info-bold"> performance optimization</span>, and
+        <span class="gtkm-info-bold"> performance optimization </span>, and
         continuously learning new technologies to craft impactful web
         applications and improve the overall user experience.
       </p>

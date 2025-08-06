@@ -3,6 +3,7 @@
 html {
   font-size: 62.5%;
   box-sizing: border-box;
+  behavior: smooth-scroll;
 }
 
 body {
@@ -16,6 +17,25 @@ body {
   color: #333;
   box-sizing: border-box;
 }
+a {
+  text-decoration: none;
+}
+
+/* Hide scrollbar but keep scroll functionality */
+.scroll-container {
+  overflow: auto;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
+}
+
+.scroll-container::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera */
+}
+
+.margin-top-96 {
+  margin-top: 12.8rem !important;
+}
+
 /* ///////////////////// */
 /* ///// Main Nav ////// */
 /* ///////////////////// */
@@ -34,6 +54,7 @@ body {
   z-index: 10;
   background-color: rgba(247, 250, 253, 0.9);
   width: 100vw;
+  z-index: 20;
 }
 
 .main-nav-container {
@@ -309,4 +330,131 @@ ul {
 }
 .sql:hover p {
   color: #fff;
+}
+
+/* ///////////////////// */
+/* /// project section //// */
+/* ///////////////////// */
+
+.project-container {
+  width: 130rem;
+  margin: 0 auto;
+  margin-bottom: 9.6rem;
+}
+
+.project-each-box {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  margin: 6.4rem 0;
+}
+
+.mac-img {
+  width: 60rem;
+  z-index: 10;
+  position: relative;
+}
+
+.pro-2nd {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  gap: 3rem;
+}
+
+.pro-head {
+  font-size: 4rem;
+}
+
+.pro-info {
+  font-size: 2rem;
+  color: #555;
+}
+
+.mac-img:hover {
+  transform: scale(1.03);
+
+  transition: 0.3s ease-in-out;
+}
+.pro-icon-box {
+  display: flex;
+  gap: 3rem;
+  margin-top: 1rem;
+}
+
+.pro-icon {
+  stroke: #555;
+  transition: transform 0.2s ease, color 0.2s ease;
+  cursor: pointer;
+}
+
+.pro-icon:hover {
+  stroke: #3066be;
+  transform: scale(1.1);
+}
+
+.pro-icon-git:hover {
+  fill: #3066be;
+}
+
+/* ///////////////////// */
+/* /// contact section //// */
+/* ///////////////////// */
+.contact-section {
+  background-color: #000;
+  padding-bottom: 9.6rem;
+  padding-top: 9.6rem;
+}
+.contact-con {
+  color: #ffffff;
+  display: flex;
+  width: 130rem;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+
+.contact-info {
+  display: flex;
+  width: 100%;
+  max-width: 50rem;
+  margin: 0;
+  gap: 3rem;
+  flex-wrap: wrap;
+}
+
+.contact-header {
+  color: #ffffff;
+  font-size: 2.4rem;
+  letter-spacing: 1px;
+}
+
+.contact-text {
+  color: #ffffff;
+  font-size: 1.2rem;
+  line-height: 1.5;
+  letter-spacing: 1px;
+}
+
+.contact-social {
+  max-width: 50rem;
+}
+
+.con-s {
+  margin-bottom: 2rem;
+}
+
+.contact-icon {
+  color: #ffffff;
+  display: flex;
+  gap: 1rem;
+}
+
+.contact-social-box {
+  display: flex;
+  gap: 2rem;
+}
+
+.con-icon {
+  fill: #ffffff;
 }
