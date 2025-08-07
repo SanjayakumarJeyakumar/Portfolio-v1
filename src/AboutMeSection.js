@@ -1,3 +1,5 @@
+import { FaDownload } from "react-icons/fa";
+
 export default function AboutMeSection() {
   return (
     <div className="abtme-container">
@@ -40,8 +42,13 @@ function GetToKnowMe() {
         continuously learning new technologies to craft impactful web
         applications and improve the overall user experience.
       </p>
-      <a href="#contact" className="blue-button">
-        Contact
+      <a
+        href="/Sanjay_Resume.pdf"
+        download="Sanjay_Resume.pdf"
+        className="blue-button"
+      >
+        Download CV{"    "}
+        <FaDownload style={{ marginRight: "8px", fill: "#ffffff" }} />
       </a>
     </div>
   );
