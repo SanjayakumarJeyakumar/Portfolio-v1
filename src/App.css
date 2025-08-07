@@ -8,6 +8,7 @@ html {
 
 body {
   position: relative;
+  overflow-x: hidden;
 }
 
 * {
@@ -136,6 +137,8 @@ ul {
   justify-content: center;
   align-items: center;
   width: 80rem;
+  max-width: 100%;
+  padding: 0 2rem;
   flex-direction: column;
 }
 
@@ -224,6 +227,8 @@ ul {
   color: #555;
   line-height: 1.5;
   font-weight: 500;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 .abtme-2nd-section {
@@ -355,12 +360,14 @@ ul {
   grid-template-columns: 1fr 1fr;
   gap: 4rem;
   margin: 6.4rem 0;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 .mac-img {
-  width: 60rem;
-  z-index: 10;
-  position: relative;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
 }
 
 .pro-2nd {
@@ -377,6 +384,9 @@ ul {
 
 .pro-info {
   font-size: 2rem;
+  width: 100%;
+  max-width: 100%;
+  word-wrap: break-word;
   color: #555;
 }
 
@@ -422,6 +432,8 @@ ul {
   justify-content: space-between;
   width: 100%;
   padding: 0 2rem;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 .contact-info {
