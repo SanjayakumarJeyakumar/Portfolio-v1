@@ -22,5 +22,9 @@ function HeroIntro() {
   );
 }
 function HeroButton() {
-  return <button className="blue-button">Projects</button>;
+  return (
+    <a href="#project" className="blue-button">
+      Projects
+    </a>
+  );
 }

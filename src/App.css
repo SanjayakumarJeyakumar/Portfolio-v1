@@ -3,7 +3,7 @@
 html {
   font-size: 62.5%;
   box-sizing: border-box;
-  behavior: smooth-scroll;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -21,15 +21,14 @@ a {
   text-decoration: none;
 }
 
-/* Hide scrollbar but keep scroll functionality */
 .scroll-container {
   overflow: auto;
-  scrollbar-width: none; /* Firefox */
-  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none;
+  -ms-overflow-style: none;
 }
 
 .scroll-container::-webkit-scrollbar {
-  display: none; /* Chrome, Safari, Opera */
+  display: none;
 }
 
 .margin-top-96 {
@@ -58,8 +57,8 @@ a {
 }
 
 .main-nav-container {
-  background-color: rgba(247, 250, 253, 0.8); /* optional blur effect */
-  backdrop-filter: blur(8px); /* makes it elegant */
+  background-color: rgba(247, 250, 253, 0.8);
+  backdrop-filter: blur(8px);
 }
 
 li {
@@ -83,7 +82,6 @@ ul {
 
 .main-nav-list-text {
   font-size: 1.6rem;
-  /* color: #3066be; */
   font-weight: 700;
   text-transform: uppercase;
   padding: 2.2rem 3rem;
@@ -107,6 +105,13 @@ ul {
   align-items: center;
 }
 
+.menu-toggle-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: none;
+}
+
 /* ///////////////////// */
 /* /// Hero section //// */
 /* ///////////////////// */
@@ -121,8 +126,8 @@ ul {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  display: flex; /* flex container */
-  justify-content: center; /* center horizontally */
+  display: flex;
+  justify-content: center;
   align-items: center;
 }
 
@@ -165,6 +170,8 @@ ul {
   letter-spacing: 1.5px;
   border-radius: 6px;
   transition: all 0.3s;
+  text-align: center;
+
   box-shadow: 1rem 1rem 3rem 1rem rgba(0, 0, 0, 0.1);
 }
 
@@ -179,7 +186,9 @@ ul {
 /* ///////////////////// */
 
 .abtme-container {
-  width: 130rem;
+  width: 100%;
+  max-width: 130rem;
+  padding: 0 2rem;
   margin: 0 auto;
   margin-bottom: 9.6rem;
 }
@@ -223,9 +232,6 @@ ul {
   grid-template-columns: 1fr 1fr;
 }
 
-.gtkm-box {
-}
-
 .gtkm-header {
   font-size: 2.8rem;
   margin-bottom: 3rem;
@@ -247,7 +253,7 @@ ul {
   display: flex;
   flex-wrap: wrap;
   gap: 2rem 2.6rem;
-  padding: 2rem;
+  padding: 2rem 2rem 2rem 0;
   font-family: "YourPreferredFont", sans-serif;
   align-items: center;
 }
@@ -337,7 +343,9 @@ ul {
 /* ///////////////////// */
 
 .project-container {
-  width: 130rem;
+  width: 100%;
+  max-width: 130rem;
+  padding: 0 2rem;
   margin: 0 auto;
   margin-bottom: 9.6rem;
 }
@@ -403,15 +411,17 @@ ul {
 /* ///////////////////// */
 .contact-section {
   background-color: #000;
-  padding-bottom: 9.6rem;
+  padding-bottom: 7.2rem;
   padding-top: 9.6rem;
 }
 .contact-con {
   color: #ffffff;
   display: flex;
-  width: 130rem;
+  max-width: 130rem;
   margin: 0 auto;
   justify-content: space-between;
+  width: 100%;
+  padding: 0 2rem;
 }
 
 .contact-info {
@@ -457,4 +467,9 @@ ul {
 
 .con-icon {
   fill: #ffffff;
+}
+
+#about,
+#project {
+  scroll-margin-top: 12rem;
 }

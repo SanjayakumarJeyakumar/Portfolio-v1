@@ -85,8 +85,8 @@ function Project() {
             </a>
           </div>
         </div>
-        <div className="mac-img-wrapper">
-          <img src={MacImg3} alt="mac-img" className="mac-img" />
+        <div className="mac-img-wrapper do-up">
+          <img src={MacImg3} alt="mac-img" className="mac-img " />
         </div>
       </div>
       <div className="project-each-box">

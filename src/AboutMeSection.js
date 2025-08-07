@@ -40,7 +40,9 @@ function GetToKnowMe() {
         continuously learning new technologies to craft impactful web
         applications and improve the overall user experience.
       </p>
-      <button className="blue-button">Contact</button>
+      <a href="#contact" className="blue-button">
+        Contact
+      </a>
     </div>
   );
 }
