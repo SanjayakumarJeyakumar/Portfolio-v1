@@ -391,7 +391,7 @@ ul {
 }
 
 .mac-img:hover {
-  transform: scale(1.03);
+  transform: scale(1.01);
 
   transition: 0.3s ease-in-out;
 }
